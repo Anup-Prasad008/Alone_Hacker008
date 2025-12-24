@@ -20,3 +20,16 @@ function animateAndOpen() {
     btn.classList.remove("active");
   }, 400);
 }
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+
+function closeMenu() {
+  document.getElementById("mobileMenu").style.display = "none";
+    }
