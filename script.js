@@ -2,7 +2,6 @@
 function toggleMenuAndScroll() {
   const menu = document.getElementById("slideMenu");
   menu.classList.toggle("open");
-
   if (menu.classList.contains("open")) {
     menu.scrollIntoView({ behavior: "smooth" });
   }
@@ -21,8 +20,16 @@ function goToContact() {
   document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 }
 
-function openProject(url) {
-  window.open(url, "_blank");
+/* Project toggle */
+function toggleProject() {
+  const more = document.getElementById("projectMore");
+  more.style.display = more.style.display === "block" ? "none" : "block";
+}
+
+/* Prevent card toggle when clicking button */
+function openProject(event) {
+  event.stopPropagation();
+  window.open("https://github.com/AloneHacker-008/Bunny-AI", "_blank");
 }
 
 /* Typewriter */
@@ -43,7 +50,7 @@ function typeEffect() {
     char++;
     setTimeout(typeEffect, 80);
   } else {
-    setTimeout(eraseEffect, 1500);
+    setTimeout(eraseEffect, 1400);
   }
 }
 
