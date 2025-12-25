@@ -37,6 +37,7 @@ body {
   position: sticky;
   top: 0;
   background: rgba(10,14,20,0.9);
+  z-index: 20; /* Ensure header is above slide-menu */
 }
 
 .menu-icon {
@@ -62,6 +63,9 @@ body {
   background: #0b0f14;
   transition: max-height 0.4s ease;
   z-index: 10;
+  position: absolute;
+  top: 60px; /* Position below header */
+  width: 100%;
 }
 
 .slide-menu.open {
@@ -92,6 +96,7 @@ body {
   font-weight: 700;
   position: relative;
   color: #00f6ff;
+  display: inline-block; /* Ensure it's contained */
 }
 
 .glitch::before,
@@ -101,6 +106,9 @@ body {
   top: 0;
   left: 0;
   opacity: 0.8;
+  width: 100%; /* Ensure full width */
+  height: 100%;
+  display: block;
 }
 
 .glitch::before {
@@ -155,6 +163,17 @@ body {
   border: 1px solid #00f6ff;
 }
 
+.black-button {
+  background: #000; /* Black background */
+  color: #e6f1ff;
+  border: 1px solid #000;
+}
+
+.black-button:hover {
+  background: #333; /* Darker on hover */
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
 /* Project box */
 .project-box {
   background: #121a26;
@@ -163,6 +182,7 @@ body {
   margin-top: 30px;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* Ensure content stays inside */
 }
 
 .project-box:hover {
@@ -177,6 +197,7 @@ body {
 .project-background h3 {
   margin-bottom: 10px;
   color: #00f6ff;
+  font-size: 24px; /* Ensure it's prominent */
 }
 
 .project-short {
@@ -230,6 +251,12 @@ body {
   padding: 12px;
   border-radius: 6px;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* Added hover effects */
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0,246,255,0.4);
 }
 
 .contact-link {
