@@ -4,11 +4,13 @@ function openMenu() {
 
   setTimeout(() => {
     document.getElementById("slideMenu").classList.add("open");
+    document.getElementById("menuBackdrop").classList.add("open");
   }, 400);
 }
 
 function closeMenu() {
   document.getElementById("slideMenu").classList.remove("open");
+  document.getElementById("menuBackdrop").classList.remove("open");
 }
 
 /* SCROLL BUTTONS */
