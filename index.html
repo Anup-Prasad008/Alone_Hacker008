@@ -7,6 +7,8 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -38,6 +40,7 @@
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
+<div class="menu-backdrop" id="menuBackdrop" onclick="closeMenu()"></div>
 
 <!-- HERO -->
 <section id="home" class="section hero">
@@ -57,7 +60,7 @@
   <div class="project-box">
     <h3>Bunny AI</h3>
     
-  <p id="projectShort">
+    <p id="projectShort">
       Bunny AI is a smart and friendly AI-based project designed to provide users with helpful 
       information and interactive responses through a simple and intuitive interface.
     </p>
@@ -81,19 +84,39 @@
 <section id="skills" class="section">
   <h2 class="section-title">Skills</h2>
   <div class="skills-grid">
-    <div class="skill-box">Python</div>
-    <div class="skill-box">Ethical Hacking</div>
-    <div class="skill-box">Linux</div>
-    <div class="skill-box">Cybersecurity</div>
+    <div class="skill-box">
+      <i class="fab fa-python"></i>
+      <h4>Python</h4>
+      <p>Proficient in scripting, automation, and AI development.</p>
+    </div>
+    <div class="skill-box">
+      <i class="fas fa-shield-alt"></i>
+      <h4>Ethical Hacking</h4>
+      <p>Skilled in penetration testing and vulnerability assessment.</p>
+    </div>
+    <div class="skill-box">
+      <i class="fab fa-linux"></i>
+      <h4>Linux</h4>
+      <p>Experienced in system administration and command-line tools.</p>
+    </div>
+    <div class="skill-box">
+      <i class="fas fa-lock"></i>
+      <h4>Cybersecurity</h4>
+      <p>Focused on threat detection, risk management, and secure coding.</p>
+    </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
-  <h2 class="section-title">About Me</h2>
-  <p class="center-text">
-    I am <strong>Anup Prasad</strong>, a cybersecurity and ethical hacking learner,
-    passionate about building AI tools and automation projects.
+  <h2>About Me</h2>
+  <p>
+    I am <strong>Anup Prasad</strong>, a passionate learner in the field of
+    <strong>Ethical Hacking</strong> and <strong>Cybersecurity</strong>.
+    Currently pursuing my studies at
+    <strong>Pt. Jawaharlal Nehru Government College</strong>.
+    I enjoy building tools, exploring security concepts, and working on
+    Python-based automation and AI projects.
   </p>
 </section>
 
@@ -103,12 +126,12 @@
 
   <div class="contact-box">
     <a class="contact-link" href="https://github.com/AloneHacker-008" target="_blank">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
       AloneHacker-008
     </a>
 
     <a class="contact-link" href="https://t.me/AloneHacker_008" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
       @AloneHacker_008
     </a>
   </div>
@@ -121,6 +144,7 @@
     <div class="footer-col">
       <h3>Anup Prasad</h3>
       <p>
+        <br> </br>
         Ethical Hacker & Cybersecurity learner focused on
         building secure, intelligent, and modern web projects.
       </p>
@@ -128,6 +152,7 @@
 
     <div class="footer-col">
       <h3>Quick Links</h3>
+      <br> </br>
       <a href="#home">Home</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -136,8 +161,13 @@
 
     <div class="footer-col">
       <h3>Contact</h3>
-      <p>GitHub: AloneHacker-008</p>
-      <p>Telegram: @AloneHacker_008</p>
+      <br> </br>
+      <a href="https://github.com/AloneHacker-008" target="_blank">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="footer-logo"> AloneHacker-008
+      </a>
+      <a href="https://t.me/AloneHacker_008" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" class="footer-logo"> @AloneHacker_008
+      </a>
     </div>
 
   </div>
@@ -149,4 +179,4 @@
 
 <script src="script.js"></script>
 </body>
-  </html>
+    </html>
