@@ -310,7 +310,6 @@ body {
   .nav-links{display:none;}
   .skills-grid { grid-template-columns: 1fr; }
 }
-
 /* Contact Us */
 .contact_us_green * {
   font-family: Nunito, sans-serif;
@@ -570,7 +569,13 @@ body {
   margin-left: 0px;
 }
 
+/* 🔥 MAKE LEFT AND RIGHT CELLS EQUAL WIDTH TO CENTER THE DIVIDER LINE */
+.contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.line {
+  flex: 1; /* Equal width for left cell */
+}
+
 .contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
+  flex: 1; /* Equal width for right cell */
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
