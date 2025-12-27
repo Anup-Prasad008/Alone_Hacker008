@@ -153,12 +153,12 @@ body {
   z-index: -2;
 }
 @keyframes highGlitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-5px,5px); }
-  40% { transform: translate(-5px,-5px); }
-  60% { transform: translate(5px,5px); }
-  80% { transform: translate(5px,-5px); }
-  100% { transform: translate(0); }
+  0% { }
+  20% { }
+  40% { }
+  60% { }
+  80% { }
+  100% { }
 }
 .typewriter {
   margin-top: 10px;
@@ -254,7 +254,7 @@ body {
   color: #7cffcb;
 }
 
-/* ABOUT SECTION (Background + Glass) */
+/* ABOUT SECTION (Background + Glass + Hover Effects) */
 .about-box {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(12px);
@@ -262,6 +262,11 @@ body {
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.1);
   box-shadow: 0 0 30px rgba(0,246,255,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0,246,255,0.6);
 }
 
 /* FOOTER */
