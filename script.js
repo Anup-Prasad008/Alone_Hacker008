@@ -126,4 +126,15 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
       submitBtn.disabled = false;
     } else {
       // Error: Show error message
-      alert('Oops!
+      alert('Oops! There was a problem submitting your form. Please try again.');
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    }
+  })
+  .catch(error => {
+    // Network error
+    alert('Oops! There was a problem submitting your form. Please check your internet and try again.');
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+  });
+});
