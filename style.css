@@ -52,16 +52,33 @@
   }
 
 .logo {
-  height: 40px;
-  width: auto;
-  margin-right: 20px;
+  height: 40px; /* Logo ki height */
+  width: 40px; /* Width ko height ke equal rakho circle ke liye */
+  border-radius: 50%; /* Yeh logo ko perfect circle bana deta hai */
+  object-fit: cover; /* Image ko circle mein fit karo (crop ho jata hai agar square nahi hai) */
+  margin-right: 15px; /* Menu icon se space */
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 .logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Hover pe thoda bada ho */
 }
-  
+.menu-icon {
+  font-size: 26px;
+  color: #00f6ff;
+  cursor: pointer;
+}
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #e6f1ff;
+}
+@media(max-width:768px){
+  .nav-links{display:none;}
+  .logo { height: 30px; width: 30px; } /* Mobile pe logo chhota */
+  .skills-grid { grid-template-columns: 1fr; }
+}
+
   /* SLIDE MENU */
   .slide-menu {
     position: fixed;
