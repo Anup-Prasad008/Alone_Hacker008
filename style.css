@@ -749,4 +749,35 @@
     justify-content: center;
   }
 }
+/* MOBILE OVERFLOW FIX */
+@media (max-width: 768px) {
 
+  /* Remove left padding causing overflow */
+  .contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
+    padding-left: 0 !important;
+  }
+
+  /* Center contact details */
+  .contact-details {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  /* Social icons responsive */
+  .contact-social {
+    justify-content: center;
+    flex-wrap: wrap;   /* wrap icons instead of overflow */
+    gap: 14px;
+    max-width: 100%;
+  }
+
+  .contact-social img {
+    width: 24px;   /*  smaller icons for mobile */
+    height: 24px;
+  }
+}
