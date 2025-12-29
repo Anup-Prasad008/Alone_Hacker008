@@ -232,7 +232,67 @@
     display: none;
     margin-top: 15px;
   }
-  
+
+/* MY BOOKS */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 2 columns on desktop, 1 on mobile */
+  gap: 20px;
+}
+.book-box {
+  display: flex;
+  background: #121a26;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.book-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0,246,255,0.5);
+}
+.book-cover {
+  width: 80px; /* Adjust width as needed */
+  height: 120px; /* ~3 lines height; adjust if needed */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.book-info {
+  flex: 1;
+}
+.book-info h3 {
+  font-family: "Orbitron", sans-serif;
+  color: #00f6ff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.book-info p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+.book-info button {
+  background: linear-gradient(135deg, #00f6ff, #8a7dff);
+  color: #0b0f14;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.book-info button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0,246,255,0.8), 0 0 40px rgba(138,125,255,0.6);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .books-grid { grid-template-columns: 1fr; } /* Stack on mobile */
+}
+
   /* SKILLS */
   .skills-grid {
     display: grid;
