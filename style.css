@@ -215,7 +215,7 @@
   51%, 100% { border-color: #00f6ff; } /* Matches text color */
 }
   .cta-buttons {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .cta-buttons button {
     background: linear-gradient(135deg, #00f6ff, #8a7dff);
