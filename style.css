@@ -201,6 +201,14 @@
   /* padding: 20px; */
 }
 
+/* Update .typewriter to add color */
+.typewriter {
+  font-family: 'Orbitron', monospace; /* Use monospace to prevent width changes */
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Hides any overflow if needed */
+  color: #00f6ff; /* New: Sets text color to cyan to match theme */
+}
+
 /* Optional: Keyframe for blinking cursor (if you want it) */
 @keyframes blink {
   0%, 50% { border-color: transparent; }
