@@ -188,17 +188,34 @@
     80% { transform: translateX(2px); }
     100% { transform: translateX(0); }
   }
- /* Add this to your existing CSS */
+ /* Container for the typewriter effect */
 .typewriter-container {
   min-height: 50px; /* Adjust based on your font size; make it tall enough for the longest text */
   display: flex;
-  align-items: center; /* Keeps text vertically centered */
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering within the container */
+  width: 100%; /* Full width for centering on the page */
+  margin: 0 auto; /* Centers the container horizontally if it's not full-width */
+  /* Optional: Add background or padding for better visibility */
+  /* background: #000; */ /* Dark background if you want contrast */
+  /* padding: 20px; */
 }
 
+/* The typewriter text itself */
 .typewriter {
   font-family: 'Orbitron', monospace; /* Use monospace to prevent width changes */
   white-space: nowrap; /* Prevents text wrapping */
   overflow: hidden; /* Hides any overflow if needed */
+  color: #00ff00; /* Add your desired color here (e.g., green for a retro look; change to white, red, etc.) */
+  font-size: 24px; /* Adjust size as needed */
+  border-right: 2px solid #00ff00; /* Blinking cursor effect (matches text color) */
+  animation: blink 1s infinite; /* Optional: Adds blinking to the cursor */
+}
+
+/* Optional: Keyframe for blinking cursor (if you want it) */
+@keyframes blink {
+  0%, 50% { border-color: transparent; }
+  51%, 100% { border-color: #00ff00; } /* Matches text color */
 }
   .cta-buttons {
     margin-top: 30px;
